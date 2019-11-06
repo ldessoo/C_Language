@@ -4,22 +4,20 @@
 1,char weak[20] ==> 定义了一个数组，数组是不能直接给赋值的
 比如：switch...case..语句中 weak = "星期一" 会出现：assignment to expression with array type 的错误
 
-修改方法：
+修改方法:
 将 char weak[]; 改为　char *weak;
 修改后的问题
 weak = "星期一"
 
-此时后报错: 
+此时后报错:
 ISO C++11 does not allow conversion from string literal to 'char*'
-原因：
-１>,系统C11之后当给char * 类型的值，直接赋值的时候，系统认为此值在使用的过程中是不能被任意改变的，所以要加 const 
+原因:
+１>,系统C11之后当给char * 类型的值，直接赋值的时候，系统认为此值在使用的过程中是不能被任意改变的，所以要加 const
 修改方法:
 const char* weak;
 
-遗留点：
+遗留点:
 １,const char* weak; 和 char* const weak;的区别
-
-
 
 二,switch...case...
 　1,当每个case 后面不加 "break"　语句的时候会一直执行到default 语句
