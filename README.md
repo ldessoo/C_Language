@@ -25,4 +25,7 @@ const char* weak;
 三,使用的C库函数
   1,time()函数，获取从1970年到现在的秒数，并返回结果，返回的是一个 time_t 类型的长整形
   2,localtime()　获取time()函数传过来的值，并转换为 struct tm 当中的值
+  3,使用ctime()函数可以直接把当前的秒转化为现在的时间
+  4,gmtime()　时间转换
+  5,asctime(gmtime(&time_t))转化时间
 

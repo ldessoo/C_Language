@@ -56,6 +56,9 @@ int main()
     time_t biggertime = 0x7FFFFFFF;
     printf("%s\n",ctime(&biggertime));
 
+    printf("%s\n",asctime(gmtime(&biggertime)));
+
+
     return 0;
 }
 
