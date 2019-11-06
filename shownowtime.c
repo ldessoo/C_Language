@@ -4,7 +4,7 @@
 
 int main()
 {
-    int i = 1000000;
+    int i = 10;
     //定义时间 time_t 一个长整形的数据
     time_t t;
     long x;
@@ -52,6 +52,10 @@ int main()
     i--;
     sleep(1);
     }
+
+    time_t biggertime = 0x7FFFFFFF;
+    printf("%s\n",ctime(&biggertime));
+
     return 0;
 }
 
