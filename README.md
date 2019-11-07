@@ -29,3 +29,6 @@ const char* weak;
   4,gmtime()　时间转换
   5,asctime(gmtime(&time_t))转化时间
 
+
+#问题
+1,const char* ptr; char const *ptr;char* const pr;三者之间的区别和用法
