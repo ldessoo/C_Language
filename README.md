@@ -42,4 +42,5 @@ const char* weak;
     2>,修饰函数的时候，表示此函数的作用域仅限于此文件此文件夹中;
 4,extern 关键字的作用；
 5,register 关键字的作用;
-6,break 和 continue 关键字的作用和区别
+6,break 和 continue 关键字的作用和区别;
+7,数组和指针的区别;
